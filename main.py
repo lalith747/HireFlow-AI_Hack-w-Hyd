@@ -1,7 +1,7 @@
 """
 main.py
 -------
-FastAPI application for the HireFlow CascadeFlow backend.
+FastAPI application for the HireFlow CascadeFlow Backend.
 
 Provides:
 - POST /api/launch              — Campaign execution endpoint
@@ -95,13 +95,12 @@ async def lifespan(app: FastAPI):
     """
     logger.info("=== HireFlow CascadeFlow Backend Starting ===")
 
+    # Init CascadeFlow with ONLY the real parameters
     init_cascadeflow(
         mode=os.getenv("CASCADEFLOW_MODE", "observe"),
         budget=float(os.getenv("CASCADEFLOW_DEFAULT_BUDGET", "1.00")),
         compliance=os.getenv("CASCADEFLOW_COMPLIANCE"),
-        enable_audit=os.getenv("CASCADEFLOW_ENABLE_AUDIT", "true").lower() == "true",
-        enable_cost_tracking=os.getenv("CASCADEFLOW_ENABLE_COST_TRACKING", "true").lower() == "true",
-        enable_semantic_routing=os.getenv("CASCADEFLOW_ENABLE_SEMANTIC_ROUTING", "true").lower() == "true",
+        verbose=os.getenv("CASCADEFLOW_VERBOSE", "false").lower() == "true",
     )
 
     # Create the engine singleton
