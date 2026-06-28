@@ -19,7 +19,7 @@ CAMPAIGNS_FILE = os.path.join(os.path.dirname(__file__), "campaigns.json")
 
 client = Hindsight(
     base_url="https://api.hindsight.vectorize.io",
-    api_key="hsk_508e408ad972eb1a8018850b01bd9454_ccd180e5622164b3"
+    api_key="hsk_api"
 )
 
 
