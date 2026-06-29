@@ -10,7 +10,7 @@
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/STATUS-HACKATHON%20SUBMISSION-E8FF4D?style=for-the-badge&labelColor=0D0B1E" />
+
 <img src="https://img.shields.io/badge/MEMORY-HINDSIGHT-E8FF4D?style=for-the-badge&labelColor=0D0B1E" />
 <img src="https://img.shields.io/badge/GOVERNANCE-CASCADEFLOW-E8FF4D?style=for-the-badge&labelColor=0D0B1E" />
 
